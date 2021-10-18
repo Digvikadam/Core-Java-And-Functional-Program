@@ -3,15 +3,14 @@ package com.bridgelabz;
 import java.util.Scanner;
 public class CoreProgram {
 	public static void main(String[] args) {
-		int year;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Year");
-		year = sc.nextInt();
-		if((year % 400==0) || (year % 4 == 0) && (year % 100 !=0)){
-			System.out.println("Year is Leap");
-		}
-		else {
-			System.out.println("Year is not Leap");
+		System.out.println("Enter Number:");
+		int number = sc.nextInt();
+		double result = 0.0;
+		System.out.println("The Harmonic series Is:");
+		for (int i = number; i>0; i--) {
+			result = result + (double)1 /i;
+			System.out.println(result + ", ");
 		}
 	}
 }
