@@ -4,13 +4,13 @@ import java.util.Scanner;
 public class CoreProgram {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Number:");
-		int number = sc.nextInt();
-		double result = 0.0;
-		System.out.println("The Harmonic series Is:");
-		for (int i = number; i>0; i--) {
-			result = result + (double)1 /i;
-			System.out.println(result + ", ");
-		}
+		System.out.println("Enter number First:");
+		int a = sc.nextInt();
+		System.out.println("Enter number Second:");
+		int b = sc.nextInt();
+		int quotient = a/b;
+		int remainder = a%b;
+		System.out.println("The Quotient is:"+quotient);
+		System.out.println("The Remainder is:"+remainder);
 	}
 }
