@@ -1,7 +1,7 @@
 package com.bridgelabz;
 
 import java.util.Scanner;
-public class CoreProgram {
+public class Quadratic {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter value of a:");
