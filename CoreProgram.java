@@ -4,20 +4,11 @@ import java.util.Scanner;
 public class CoreProgram {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter First Number:");
-		int a = sc.nextInt();
-		System.out.println("Enter Second Number:");
-		int b = sc.nextInt();
-		System.out.println("Enter Third Number");
-		int c = sc.nextInt();
-		if(a>=b && a>=c) {
-			System.out.println("The Largest Number is:"+a);
-		}
-		else if(b>=a && b>=c) {
-			System.out.println("The Largest Number is:"+b);
-		}
-		else {
-			System.out.println("The Largest Number is:"+c);
-		}	
+		System.out.println("Enter First Point Value:");
+		int x = sc.nextInt();
+		System.out.println("Enter Second Point Value:");
+		int y = sc.nextInt();
+		double Distance=Math.sqrt((x*x) +(y*y));
+		System.out.println("Distance from(0,0) to  " + x +"  and  "+ y +"  is:  " +Distance);
 	}
 }
